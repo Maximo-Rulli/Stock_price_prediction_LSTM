@@ -1,4 +1,4 @@
-#Amazon Stock Prediction Using LSTMs
+# Amazon Stock Prediction Using LSTMs
 This repository contains code for predicting the closing value of Amazon's stocks for the last 6000 days (aprox.) using LSTMs. The prediction is made using Tensorflow.
 
 ##Dataset
