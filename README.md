@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ```
 
 
-### Run the Jupyter notebook amazon_stock_prediction.ipynb:
+### To run the graph of the final model versus the actual values run the following line:
 ```
 jupyter notebook amazon_stock_prediction.ipynb
 ```
@@ -46,4 +46,4 @@ jupyter notebook amazon_stock_prediction.ipynb
 The LSTM model achieved a Mean Squared Error (MSE) of 0.0659 on the test dataset. The predicted values were plotted against the actual values, and the plot can be seen in the notebook.
 
 ## Conclusion
-In this project, we successfully predicted the closing value of Amazon's stocks for the last 6000 days (aprox.) using LSTMs and Tensorflow. The model achieved a good RMSE score, indicating its effectiveness in predicting stock prices. This project can be extended to predict the stock prices of other companies as well.
+In this project, we successfully predicted the closing value of Amazon's stocks for the last 6000 days (aprox.) using LSTMs and Tensorflow. The model achieved a good MSE score on the validation dataset, however a remarkable difference is observed in the last 300 days, indicating that the model has not seen data similar to that beforehand and so it fails to accurately predict the stock values. Nonetheless it remains clear that despite the fact that there is a gap between the predicted and the actual values, the model still correctly predicts the tendency of the stock.
