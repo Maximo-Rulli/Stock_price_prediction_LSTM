@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ### To run the graph of the final model versus the actual values run the following line:
 ```
-jupyter notebook amazon_stock_prediction.ipynb
+python Stock_price.py
 ```
 
 ## Approach
