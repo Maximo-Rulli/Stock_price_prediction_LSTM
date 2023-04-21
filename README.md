@@ -42,7 +42,7 @@ jupyter notebook amazon_stock_prediction.ipynb
 2. Plotted the predictions against the actual values.
 
 ## Results
-The LSTM model achieved a Root Mean Squared Error (RMSE) of 0.0659 on the test dataset. The predicted values were plotted against the actual values, and the plot can be seen in the notebook.
+The LSTM model achieved a Mean Squared Error (MSE) of 0.0659 on the test dataset. The predicted values were plotted against the actual values, and the plot can be seen in the notebook.
 
 ## Conclusion
 In this project, we successfully predicted the closing value of Amazon's stocks for the last 6000 days (aprox.) using LSTMs and Tensorflow. The model achieved a good RMSE score, indicating its effectiveness in predicting stock prices. This project can be extended to predict the stock prices of other companies as well.
