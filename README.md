@@ -5,11 +5,12 @@ This repository contains code for predicting the closing value of Amazon's stock
 The dataset used in this project is obtained from the following Kaggle link (https://www.kaggle.com/datasets/kannan1314/amazon-stock-price-all-time). It contains daily stock prices of Amazon from 1997 to 2021.
 
 ## Requirements
-* Python 3.x
-* Tensorflow
-* Pandas
-* Numpy
-* Matplotlib
+* Python 3.10.2
+* Pandas 1.3.5
+* Numpy 1.23.3
+* Tensorflow 2.11.0
+* Keras 2.11.0
+* Matplotlib 3.6.0
 
 
 ## Getting Started
