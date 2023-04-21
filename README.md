@@ -32,14 +32,14 @@ jupyter notebook amazon_stock_prediction.ipynb
 ```
 
 ## Approach
-Preprocessed the dataset by scaling the features.
-Created a time series dataset.
-Divided the dataset into training and testing sets.
-Built an LSTM model using Tensorflow.
-Trained the model on the training dataset.
-Evaluated the model on the testing dataset.
-Made predictions on the test dataset.
-Plotted the predictions against the actual values.
+1. Preprocessed the dataset by scaling the features.
+2. Created a time series dataset.
+2. Divided the dataset into training and testing sets.
+2. Built an LSTM model using Tensorflow.
+2. Trained the model on the training dataset.
+2. Evaluated the model on the testing dataset.
+2. Made predictions on the test dataset.
+2. Plotted the predictions against the actual values.
 
 ## Results
 The LSTM model achieved a Root Mean Squared Error (RMSE) of 0.0659 on the test dataset. The predicted values were plotted against the actual values, and the plot can be seen in the notebook.
