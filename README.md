@@ -16,7 +16,7 @@ The dataset used in this project is obtained from the following Kaggle link (htt
 
 ### Clone the repository:
 ```
-git clone https://github.com/your-username/amazon-stock-prediction.git
+git clone https://github.com/Maximo-Rulli/Stock_price_prediction_LSTM
 ```
 
 
