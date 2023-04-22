@@ -2,7 +2,7 @@
 This repository contains code for predicting the closing value of Amazon's stocks for the last 6000 days (aprox.) using LSTMs. The prediction is made using Tensorflow.
 
 ## Dataset
-The dataset used in this project is obtained from the following Kaggle link (https://www.kaggle.com/datasets/kannan1314/amazon-stock-price-all-time). It contains daily stock prices of Amazon from 1997 to 2021.
+The dataset used in this project is obtained from the following Kaggle link: https://www.kaggle.com/datasets/kannan1314/amazon-stock-price-all-time. It contains daily stock prices of Amazon from 1997 to 2021.
 
 ## Requirements
 * Python 3.10.2
