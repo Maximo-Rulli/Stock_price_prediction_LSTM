@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ### To run the graph of the final model versus the actual values run the following line:
 ```
-python Stock_price.py
+python stock_view.py
 ```
 
 ## Approach
