@@ -43,7 +43,7 @@ python stock_view.py
 2. Plotted the predictions against the actual values.
 
 ## Results
-The LSTM model achieved a Mean Squared Error (MSE) of 0.0659 on the test dataset. The predicted values were plotted against the actual values, and the plot can be seen in the notebook.
+The LSTM model achieved a Mean Squared Error (MSE) of 0.0367 on the test dataset. The predicted values were plotted against the actual values, and the plot can be seen in the notebook.
 
 ## Conclusion
 In this project, we successfully predicted the closing value of Amazon's stocks for the last 6000 days (aprox.) using LSTMs and Tensorflow. The model achieved a good MSE score on the validation dataset, however a remarkable difference is observed in the last 300 days, indicating that the model has not seen data similar to that beforehand and so it fails to accurately predict the stock values. Nonetheless it remains clear that despite the fact that there is a gap between the predicted and the actual values, the model still correctly predicts the tendency of the stock.
