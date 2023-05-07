@@ -55,5 +55,5 @@ def update(i):
     ax.legend()
 
 #Define the animation
-ani = animation.FuncAnimation(fig=fig, func=update, interval=10)
+ani = animation.FuncAnimation(fig=fig, func=update, interval=10, cache_frame_data=False)
 plt.show()
