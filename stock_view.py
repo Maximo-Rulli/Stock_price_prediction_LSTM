@@ -1,5 +1,7 @@
 #Importing essential libraries
 import pandas as pd
+#Importing essential libraries
+import pandas as pd
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
@@ -25,7 +27,7 @@ for i in range(len(X_norm)-6):
   X_data[i,0:5] = X_norm[i:i+5]
   Y_data[i] = X_norm[i+6]
 
-#
+#Reshape data to be compatible to LSTM
 X_data = X_data.reshape(X_data.shape[0], X_data.shape[1], 1)
 
 #Load the pretrained model
@@ -52,6 +54,8 @@ def update(i):
     plt.cla()
     ax.plot(x_plot, y_pred, color='orange', label='Predicted')
     ax.plot(x_plot, y_data, color='blue', label='Original')
+    ax.set_xlabel('Days')
+    ax.set_ylabel('Price dollars ($)')
     ax.legend()
 
 #Define the animation
