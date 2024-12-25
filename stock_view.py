@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Importing essential libraries
 import pandas as pd
 import numpy as np
@@ -60,7 +59,7 @@ def update(i):
 #Define the animation
 ani = animation.FuncAnimation(fig=fig, func=update, interval=10, cache_frame_data=False)
 plt.show()
-=======
+
 #Importing essential libraries
 import pandas as pd
 import numpy as np
@@ -122,4 +121,4 @@ def update(i):
 #Define the animation
 ani = animation.FuncAnimation(fig=fig, func=update, interval=10, cache_frame_data=False)
 plt.show()
->>>>>>> 8c7e660e27ba8ac58c0c5a222da98d644d59fabb
+
