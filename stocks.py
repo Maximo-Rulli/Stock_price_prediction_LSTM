@@ -10,6 +10,10 @@ import matplotlib.animation as animation
 #Importing the dataset from Amazon stocks over 6150 days
 df = pd.read_csv('Amazon.csv')
 
+#LIMITE
+START = 5730
+LIM = START+6
+
 #Getting the closing values of each day
 X = df.Close.values
 mean = np.mean(X)
@@ -39,20 +43,22 @@ Y_data = (Y_data*std)+mean
 fig, ax = plt.subplots()
 x_plot = []
 ax.plot([], [])
+fak_counter = count(START, 1)
 counter = count(0, 1)
 
 #Define the function to update the graph to make an animation
 def update(i):
   idx = next(counter)
-  if idx<Y_pred.shape[0]:
-    x = np.linspace(1, idx+1, idx+1)
-    y_pred = Y_pred[0:idx+1, 0]
-    y_data = Y_data[0:idx+1]
+  ran = next(fak_counter)
+  if ran<LIM:
+    x = np.linspace(START, ran+1, idx+1)
+    y_pred = Y_pred[START:ran+1, 0]
+    y_data = Y_data[START:ran+1]
     x_plot = x
     plt.cla()
-    ax.plot(x_plot, y_pred)
-    ax.plot(x_plot, y_data)
+    ax.plot(x_plot, y_pred, color='orange', label='Predicted')
+    ax.plot(x_plot, y_data, color='blue', label='Original')
 
 #Define the animation
-ani = animation.FuncAnimation(fig=fig, func=update, interval=1)
+ani = animation.FuncAnimation(fig=fig, func=update, interval=0, cache_frame_data=False)
 plt.show()

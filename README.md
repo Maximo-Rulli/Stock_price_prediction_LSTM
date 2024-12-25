@@ -2,14 +2,15 @@
 This repository contains code for predicting the closing value of Amazon's stocks for the last 6000 days (aprox.) using LSTMs. The prediction is made using Tensorflow.
 
 ## Dataset
-The dataset used in this project is obtained from the following Kaggle link (https://www.kaggle.com/datasets/kannan1314/amazon-stock-price-all-time). It contains daily stock prices of Amazon from 1997 to 2021.
+The dataset used in this project is obtained from the following Kaggle link: https://www.kaggle.com/datasets/kannan1314/amazon-stock-price-all-time. It contains daily stock prices of Amazon from 1997 to 2021.
 
 ## Requirements
-* Python 3.x
-* Tensorflow
-* Pandas
-* Numpy
-* Matplotlib
+* Python 3.10.2
+* Pandas 1.3.5
+* Numpy 1.23.3
+* Tensorflow 2.11.0
+* Keras 2.11.0
+* Matplotlib 3.6.0
 
 
 ## Getting Started
@@ -26,9 +27,9 @@ pip install -r requirements.txt
 ```
 
 
-### Run the Jupyter notebook amazon_stock_prediction.ipynb:
+### To run the graph of the final model versus the actual values run the following line:
 ```
-jupyter notebook amazon_stock_prediction.ipynb
+python stock_view.py
 ```
 
 ## Approach
@@ -42,7 +43,9 @@ jupyter notebook amazon_stock_prediction.ipynb
 2. Plotted the predictions against the actual values.
 
 ## Results
-The LSTM model achieved a Mean Squared Error (MSE) of 0.0659 on the test dataset. The predicted values were plotted against the actual values, and the plot can be seen in the notebook.
+The LSTM model achieved a Mean Squared Error (MSE) of 0.0367 on the test dataset. The predicted values were plotted against the actual values, and the plot can be seen in the notebook and below:
+
+![Picture of the graph comparing the actual versus predicted stock values](stocks.png)
 
 ## Conclusion
-In this project, we successfully predicted the closing value of Amazon's stocks for the last 6000 days (aprox.) using LSTMs and Tensorflow. The model achieved a good RMSE score, indicating its effectiveness in predicting stock prices. This project can be extended to predict the stock prices of other companies as well.
+In this project, we successfully predicted the closing value of Amazon's stocks for the last 6000 days (aprox.) using LSTMs and Tensorflow. The model achieved a good MSE score on the validation dataset, however a remarkable difference is observed in the last 300 days, indicating that the model has not seen data similar to that beforehand and so it fails to accurately predict the stock values. Nonetheless it remains clear that despite the fact that there is a gap between the predicted and the actual values, the model still correctly predicts the tendency of the stock.
